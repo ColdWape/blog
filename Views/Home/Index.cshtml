@@ -1,0 +1,40 @@
+﻿<!-- Page Content -->
+
+
+
+
+
+<section class="blog-posts">
+    <div class="container">
+        <div class="row">
+                <div class="all-blog-posts">
+                    <div class="row">
+                        @foreach (var item in ViewBag.Posts)
+                        {
+                            <div class="col-lg-12">
+                                <div class="blog-post">
+                                    <div class="blog-thumb" style=" height: 450px; overflow: hidden;">
+                                        <img src="@item.MainPhoto" alt="">
+                                    </div>
+                                    <div class="down-content">
+                                        <span>@item.Name</span>
+                                        <a href="post-details.html"><h4>@item.Theme</h4></a>
+                                        <ul class="post-info">
+                                            <li>@item.Author</li>
+                                            <li>@item.Date</li>
+                                        </ul>
+                                        <p>@item.Text</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+

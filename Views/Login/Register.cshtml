@@ -1,0 +1,36 @@
+﻿@model blog.Models.RegisterModel
+<section class="blog-posts">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+
+                <div class="sidebar">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="sidebar-item search">
+                                
+                                <div class="sidebar-heading">
+                                    <h2>Регистрация</h2>
+                                </div>
+                                <form id="search_form" method="post" asp-action="Register" asp-controller="Login">
+                                    <input type="text" asp-for="Mail" class="searchText" placeholder="Нажми для ввода почты" autocomplete="on">
+                                    <br />
+                                    <br />
+                                    <input type="text" asp-for="Name" class="searchText" placeholder="Нажми для ввода имени" autocomplete="on">
+                                    <br />
+                                    <br />
+                                    <input type="password" asp-for="Pass" class="searchText" placeholder="Нажми для ввода пароля" autocomplete="on">
+                                    <br />
+                                    <br />
+                                    <input type="submit" class="searchText" value="Готово">
+
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
